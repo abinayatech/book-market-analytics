@@ -1,0 +1,9 @@
+scrapy
+streamlit
+pandas
+sqlalchemy
+matplotlib
+graphviz
+seaborn
+streamlit-lottie
+plotly
