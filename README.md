@@ -1,6 +1,6 @@
 # 📊 Book Market Analytics Platform
 
-An end-to-end web scraping and data analytics project developed as part of a final-year engineering / internship assessment. The project focuses on collecting public e-commerce data, processing it into a structured format, and visualizing meaningful market insights through an interactive dashboard.
+An end-to-end web scraping and data analytics project that collects public e-commerce data, processes it into a structured format, and visualizes meaningful market insights through an interactive dashboard.
 
 ## 📌 Project Overview
 
