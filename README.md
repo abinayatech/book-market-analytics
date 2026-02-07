@@ -1,87 +1,83 @@
-# � Project: Real-Time Book Market Analytics & AI Recommender
+# 📊 Book Market Analytics Platform
 
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Framework](https://img.shields.io/badge/Scrapy-2.11-orange)
-![Dashboard](https://img.shields.io/badge/Streamlit-1.32-red)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-> **Final Year Engineering Capstone Project**
-> An end-to-end data engineering solution that automates market research by scraping e-commerce data, processing it into a structured database, and visualizing actionable insights via an interactive dashboard.
+An end-to-end web scraping and data analytics project developed as part of a final-year engineering / internship assessment. The project focuses on collecting public e-commerce data, processing it into a structured format, and visualizing meaningful market insights through an interactive dashboard.
 
 ---
 
 ## 📌 Project Overview
 
-This project simulates a real-world **Market Intelligence Platform**. It autonomously gathers data from online book retailers, transforming unstructured HTML into structured financial insights.
+This project demonstrates a complete **data engineering pipeline** starting from web scraping to data analysis and visualization.
 
-The system features an **AI-driven "Opportunity Detection Engine"** (previously "Hidden Gems") to identify undervalued assets by cross-referencing product ratings with price distributions.
+Book data is collected from a publicly available website, where unstructured HTML content is scraped, cleaned, transformed, and stored in a structured SQLite database. The processed data is then analyzed and visualized using a Streamlit-based dashboard to support market-level insights.
 
----
+A rule-based **Opportunity Detection Module** is implemented to identify high-rated books that are priced below the market average.
 
-## ✨ Unique Features (The "Wow" Factor)
-
-1.  **💎 Opportunity Detection Engine:**
-    *   Implemented a custom logic engine that automatically identifies high-quality books (Rated 4.0+) selling below market average.
-    *   Uses a proprietary **Profitability Index** to rank opportunities.
-
-2.  **Scalable ETL Pipeline:**
-    *   Handles data cleaning (currency conversion GBP -> INR, text normalization) and structured storage automatically.
-    *   Engineered to scrape 1000/1000 items with 100% data integrity.
-
-3.  **Interactive Category Deep-Dive:**
-    *   Designed a dynamic analytics module allowing users to compare category performance metrics (Average Price vs. Rating) in real-time.
-    *   Visualized using interactive Bubble Charts (Plotly).
-
-4.  **Real-Time Dashboard Integration:**
-    *   Decoupled the scraping logic from the visualization layer (Streamlit) using a shared SQLite database.
-    *   Features a live "Market Ticker" and professional Lottie animations.
+*Note: This project uses data from publicly accessible web pages and is intended strictly for educational and academic purposes.*
 
 ---
 
-## 🛠️ Tech Stack & Skills Demonstrated
+## ✨ Key Features
 
-*   **Data Collection (ETL):** Python, Scrapy (Spiders, Items, Pipelines)
-*   **Data Storage:** SQLite, SQL
-*   **Data Analysis:** Pandas, NumPy
-*   **Visualization & UI:** Streamlit, Plotly, Lottie Animations
-*   **Automation:** PowerShell Scripting
-
----
-
-## 🧠 Key Technical Challenges Solved
-
-1.  **Automated Pagination Handling:**
-    *   Engineered the spider to detect and recursively follow 'Next' pagination links to ensure **100% data coverage**.
-
-2.  **Data Quality Enforcement:**
-    *   Utilized Scrapy Item Pipelines to enforce data schema constraints.
-    *   Cleans messy raw HTML (e.g., converting "Five" -> 5) before storage.
+- Automated web scraping with pagination handling  
+- Data cleaning and normalization (rating conversion, currency conversion)  
+- Structured storage using SQLite  
+- Interactive dashboard for market analysis  
+- Rule-based identification of underpriced, high-rated books  
+- CSV export for further analysis  
 
 ---
 
-## ⚡ How to Run
+## 🛠️ Tech Stack
 
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/yourusername/book-market-analytics.git
-    cd book-market-analytics
-    ```
-
-2.  **Auto-Setup & Run** (Recommended)
-    Double-click `setup_and_run.ps1` or run in PowerShell:
-    ```powershell
-    .\setup_and_run.ps1
-    ```
-
-3.  **Manual Execution**
-    *   Install dependencies: `pip install -r requirements.txt`
-    *   Run scraper: `cd scraper && scrapy crawl books`
-    *   Launch dashboard: `streamlit run dashboard/app.py`
+- **Programming Language:** Python  
+- **Web Scraping:** Scrapy  
+- **Data Processing:** Pandas, NumPy  
+- **Database:** SQLite  
+- **Visualization & UI:** Streamlit, Plotly  
+- **Automation:** PowerShell (optional)
 
 ---
 
-## � Business Impact
+## 🧠 Technical Highlights
 
-*   Provided a tool for identifying market inefficiencies (underpriced high-rated items).
-*   Automated the manual process of market research, saving hours of manual data entry.
+- **Pagination Handling:** Scraped data across multiple pages to ensure complete dataset collection  
+- **Data Quality Enforcement:** Cleaned raw HTML data and standardized ratings and prices  
+- **Decoupled Architecture:** Scraping and dashboard layers operate independently using a shared database  
+
+---
+
+## 📊 Dashboard Capabilities
+
+- Inventory size and average pricing metrics  
+- Category-wise distribution analysis  
+- Price vs rating comparison  
+- Identification of potential value opportunities  
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/book-market-analytics.git
+cd book-market-analytics
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the Scraper
+cd scraper
+scrapy crawl books
+
+4️⃣ Launch the Dashboard
+streamlit run dashboard/app.py
+
+📈 Learning Outcomes
+
+Hands-on experience with web scraping and HTML parsing
+
+Understanding of ETL (Extract, Transform, Load) pipelines
+
+Practical exposure to data cleaning and database management
+
+Building interactive dashboards for data-driven insights
