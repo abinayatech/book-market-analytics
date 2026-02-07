@@ -2,8 +2,6 @@
 
 An end-to-end web scraping and data analytics project developed as part of a final-year engineering / internship assessment. The project focuses on collecting public e-commerce data, processing it into a structured format, and visualizing meaningful market insights through an interactive dashboard.
 
----
-
 ## 📌 Project Overview
 
 This project demonstrates a complete **data engineering pipeline** starting from web scraping to data analysis and visualization.
@@ -14,8 +12,6 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 
 *Note: This project uses data from publicly accessible web pages and is intended strictly for educational and academic purposes.*
 
----
-
 ## ✨ Key Features
 
 - Automated web scraping with pagination handling  
@@ -24,8 +20,6 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 - Interactive dashboard for market analysis  
 - Rule-based identification of underpriced, high-rated books  
 - CSV export for further analysis  
-
----
 
 ## 🛠️ Tech Stack
 
@@ -36,15 +30,12 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 - **Visualization & UI:** Streamlit, Plotly  
 - **Automation:** PowerShell (optional)
 
----
-
 ## 🧠 Technical Highlights
 
 - **Pagination Handling:** Scraped data across multiple pages to ensure complete dataset collection  
 - **Data Quality Enforcement:** Cleaned raw HTML data and standardized ratings and prices  
 - **Decoupled Architecture:** Scraping and dashboard layers operate independently using a shared database  
 
----
 
 ## 📊 Dashboard Capabilities
 
@@ -53,7 +44,6 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 - Price vs rating comparison  
 - Identification of potential value opportunities  
 
----
 
 ## ⚙️ How to Run the Project
 
@@ -72,6 +62,7 @@ scrapy crawl books
 4️⃣ Launch the Dashboard
 streamlit run dashboard/app.py
 
+
 📈 Learning Outcomes
 
 Hands-on experience with web scraping and HTML parsing
@@ -81,3 +72,4 @@ Understanding of ETL (Extract, Transform, Load) pipelines
 Practical exposure to data cleaning and database management
 
 Building interactive dashboards for data-driven insights
+
