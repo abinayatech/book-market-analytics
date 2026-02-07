@@ -45,19 +45,20 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 - Identification of potential value opportunities  
 
 ⚙️ How to Run the Project
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 git clone https://github.com/yourusername/book-market-analytics.git
 cd book-market-analytics
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Scraper
+### 3️⃣ Run the Scraper
 cd scraper
 scrapy crawl books
 
-4️⃣ Launch the Dashboard
+### 4️⃣ Launch the Dashboard
 streamlit run dashboard/app.py
+
 
 📈 Learning Outcomes
 
