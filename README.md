@@ -48,22 +48,21 @@ A rule-based **Opportunity Detection Module** is implemented to identify high-ra
 ## ⚙️ How to Run the Project
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/yourusername/book-market-analytics.git
 cd book-market-analytics
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Scraper
+### 3️⃣ Run the Scraper
 cd scraper
 scrapy crawl books
 
-4️⃣ Launch the Dashboard
+### 4️⃣ Launch the Dashboard
 streamlit run dashboard/app.py
 
-
-📈 Learning Outcomes
+### 📈 Learning Outcomes
 
 Hands-on experience with web scraping and HTML parsing
 
@@ -72,4 +71,3 @@ Understanding of ETL (Extract, Transform, Load) pipelines
 Practical exposure to data cleaning and database management
 
 Building interactive dashboards for data-driven insights
-
